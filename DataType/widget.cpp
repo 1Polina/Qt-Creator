@@ -18,15 +18,15 @@ void Widget::on_pushButton_clicked()
 {
     QString s = ui->lineEdit->text();
     if (s == "") {
-        ui->lineEdit_2->setText("Пустая строка");
+        ui->lineEdit_2->setText("empty line");
     }
     else if (s.toInt()) {
-        ui->lineEdit_2->setText("Целое число");
+        ui->lineEdit_2->setText("int");
     }
     else if (s.toDouble()) {
-        ui->lineEdit_2->setText("Дробное число");
+        ui->lineEdit_2->setText("double");
     }
     else {
-        ui->lineEdit_2->setText("Строка");
+        ui->lineEdit_2->setText("string");
     }
 }
