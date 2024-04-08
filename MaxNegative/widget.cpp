@@ -18,7 +18,7 @@ void Widget::on_spinBox_valueChanged(int arg1)
     ui->tabl->setRowCount(arg1);
 }
 
-bool Widget::correct(QTableWidget *table, int kol){//проверка на корректность
+bool Widget::correct(QTableWidget *table, int kol){ //cheking for correctness
     int *mas = new int[ui->tabl->rowCount()];
     bool okk=true;
     bool ok1=true;
@@ -43,7 +43,7 @@ bool Widget::correct(QTableWidget *table, int kol){//проверка на ко�
         }
     }
     if(!ok1){
-        ui->mist->setText("введите числа");
+        ui->mist->setText("enter numbers");
     }
     else {
         ui->mist->clear();
