@@ -82,13 +82,6 @@ void Widget::on_kn_clicked()
     double vect2=per(d,f,g,h);
     double vect3=per(a,s,g,h);
 
-//    if((((a+s)+(d+f))<(g+h)) or (((d+f)+(g+h))<a+s) or ((g+h)+(a+s)<d+f)){
-//        ui->pl->clear();
-//        ui->pr->clear();
-//        ui->lineEdit_9->setText("несуществует");
-//        ui->lineEdit_9->setPalette(red);
-//    }
-
     double pr=vect1+vect2+vect3;
     ui->pr->setText(QString::number(pr));
 
